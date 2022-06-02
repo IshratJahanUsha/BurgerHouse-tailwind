@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-image: url('images/homeBg.png');
+  background-repeat: no-repeat;
+  /* background-size: 1400px; */
+  background-position: 90% -1%;
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* humburger ends */
+
+#chef {
+  background-image: url('images/chefBg.png');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  color: #F54B3B;
+}
+
+#big {
+  background-image: url('images/bigBurgerBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F54B3B;
+}
+
+.circleDiv {
+  background-color: #fff;
+  width: 7rem;
+  height: 7rem;
+}
+
+.circleDiv h5 {
+  background-color: #F54B3B;
+  padding: 1.5rem 0;
+}
+
+#statitics{
+  padding-bottom: 5rem;
+}
+
+#popularPackage {
+  background-image: url('images/packageBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+
+#berryComment {
+  background-image: url('images/barryHendersonBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 15rem;
+  color: #fff;
+}
+
+#berryComment p{
+ font-size: 2rem;
+ line-height: 2.25rem;
+}
+
+#ourUpdate {
+  background-image: url('images/ourUpdateBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#footer{
+  background-color: #000;
+}
+
+.footer-left{
+  margin-right: 10rem;
+}
+
+.footer-links{
+  margin-right: 2rem;
+}
+
+
+@media (max-width: 576px) {
+
+  .logo img {
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .logo p {
+    font-size: 0.80rem;
+  }
+
+  #menu-btn {
+    margin-right: 20px;
+    color: #fff;
+  }
+
+  .circleDiv {
+    margin-left: 30%;
+  }
+
+  .package{
+    margin-top: 1rem;
+  }
+
+  .package img {
+    margin-left: 30%;
+  }
+
+  #berryComment{
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+  }
+  
+  #berryComment p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-links{
+    margin-right: 0rem;
+  }
+
+  .footer-left{
+    margin-right: 0rem;
+  }
+
+  .footer-left img{
+    margin-left: 1.5rem;
+  }
+
+  
+
+}
+
+/* <img src="images/Background2.png" class="h-2 block md:hidden" alt="" /> */
